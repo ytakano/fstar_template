@@ -1,4 +1,4 @@
-# Template of FSta
+# Template of F star
 
 ## Run Container and Compile F star's source code
 
