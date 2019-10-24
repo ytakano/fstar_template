@@ -1,9 +1,10 @@
+# Template of FSta
 
-# Run Container and Compile F star's source code
+## Run Container and Compile F star's source code
 
-## Host
+### Host
 
-Build container image and run the container.
+Build a container image and run the container.
 
 ```
 $ cd docker
@@ -11,7 +12,7 @@ $ docker-compose build
 $ docker-compose run fstar
 ```
 
-## Guest Container
+### Guest Container
 
 Compile an example file, and execute it.
 
