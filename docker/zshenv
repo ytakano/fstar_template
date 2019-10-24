@@ -1,0 +1,11 @@
+export TERM=xterm
+export RPROMPT='[%~]'
+export HISTFILE=$HOME/.zsh_history
+export HISTSIZE=10000
+export SAVEHIST=10000
+export EDITOR=vi
+export PAGER=less
+export MAKEFLAGS="-j 20"
+export OCAMLPATH=/usr/local/fstar/bin
+export FSTAR_HOME=/usr/local/fstar
+export PATH=/usr/local/fstar/bin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin:/bin:/sbin

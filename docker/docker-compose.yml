@@ -1,0 +1,13 @@
+version: '3'
+services:
+  fstar:
+    build: .
+    volumes:
+      - "../:/workdir"
+    cap_add:
+      - SYS_PTRACE
+    security_opt:
+      - seccomp:unconfined
+    stdin_open: true
+    tty: true
+    working_dir: "/workdir"
