@@ -22,9 +22,7 @@ Hello F*!
 
 # Docker
 
-## Run Container and Compile F star's source code
-
-### Host
+## Run Container
 
 Build a container image and run the container.
 
@@ -34,7 +32,7 @@ $ docker-compose build
 $ docker-compose run fstar
 ```
 
-### Guest Container
+## Compie and Run on Guest Environment
 
 Compile an example file, and execute it.
 
