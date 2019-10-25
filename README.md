@@ -1,4 +1,4 @@
-# Ubuntu Linuxe
+# Ubuntu Linux
 
 ## Install F*
 
