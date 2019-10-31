@@ -2,9 +2,9 @@ FROM ubuntu:19.04
 
 RUN apt-get update && \
     apt-get upgrade -y && \
-    apt-get install -y zsh build-essential git cmake vim jq libncurses5-dev libtinfo5 opam
+    apt-get install -y zsh build-essential git cmake vim jq libncurses5-dev libtinfo5 opam mccs
 
-RUN opam init --disable-sandboxing -y && eval $(opam config env)
+RUN opam init --solver=mccs --disable-sandboxing -y && eval $(opam config env)
 RUN opam switch create 4.08.1 -y && eval $(opam config env) && opam update
 RUN opam install depext -y && opam depext -i conf-gmp && opam install ocamlbuild ocamlfind batteries stdint zarith yojson fileutils pprint menhir ulex ppx_deriving ppx_deriving_yojson process -y
 
